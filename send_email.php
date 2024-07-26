@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $reason = htmlspecialchars($_POST['reason']);
 
-    $to = getenv("EMAIL");
+    $to = "grammar12131@gmail.com";//getenv("EMAIL");
     $subject = "License - $name";
     $message = "Name: $name\nDate of Birth: $dob\nEmail: $email\n\nReason for Applying:\n$reason";
     $headers = 'From: no-reply@yourdomain.com' . "\r\n" .
