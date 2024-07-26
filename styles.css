@@ -80,7 +80,8 @@ form button:hover {
 }
 
 .benefits-section {
-    width: 75%;
+    width: 60%;
+    height: 75%
 }
 
 .benefits-section h2 {
