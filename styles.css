@@ -6,91 +6,103 @@ body {
 }
 
 header {
-    background-color: #002147;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-.logo img {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    left: 20px;
-    top: 20px;
+header .logo img {
+    height: 50px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.apply-btn {
-    background-color: #ffcc00;
-    border: none;
-    color: black;
-    padding: 10px 20px;
+    flex-grow: 1;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+    margin: 0;
 }
 
-.apply-btn:hover {
-    background-color: #e6b800;
+.apply-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 main {
     padding: 20px;
 }
 
-footer {
-    background-color: #002147;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 form label {
-    display: block;
-    margin-bottom: 8px;
+    margin-top: 10px;
 }
 
-form input, form textarea {
-    width: calc(100% - 20px);
+form input,
+form textarea {
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 form button {
-    background-color: #002147;
-    color: white;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #00132f;
+    background-color: #555;
+}
+
+.benefits-section {
+    margin-top: 40px;
+}
+
+.benefits-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.scrollable-div {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.benefit-box {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.benefit-box h3 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
