@@ -32,7 +32,15 @@ header h1 {
     border-radius: 5px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 main {
+    display: flex;
+    flex-direction: row;
     padding: 20px;
 }
 
@@ -68,7 +76,8 @@ form button:hover {
 }
 
 .benefits-section {
-    margin-top: 40px;
+    margin-left: 20px;
+    width: 40%;
 }
 
 .benefits-section h2 {
