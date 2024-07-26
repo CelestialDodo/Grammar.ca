@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grammar License Official Website</title>
+    <title>Apply for Grammar License</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,16 +11,71 @@
         <div class="logo">
             <img src="logo.png" alt="Government Logo">
         </div>
-        <h1>Grammar License Authority</h1>
-        <button class="apply-btn" onclick="window.location.href='apply.html'">Apply for Grammar License</button>
+        <h1>Apply for Grammar License</h1>
+        <a href="#apply" class="apply-button">Apply for Grammar License</a>
     </header>
     <main>
-        <section>
-            <h2>Welcome to the Official Grammar License Website</h2>
-            <p>
-                The Grammar License Authority is dedicated to ensuring proper grammar usage across all written communication. 
-                Apply for a grammar license today to demonstrate your commitment to excellence in writing.
-            </p>
+        <section id="apply">
+            <form action="https://formspree.io/f/xanwqgjn" method="POST" id="licenseForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reason">Why you want a license:</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="benefits-section">
+            <h2>License Benefits</h2>
+            <div class="scrollable-div">
+                <div class="benefit-box">
+                    <h3>Tier 1</h3>
+                    <ul>
+                        <li>Basic grammar check</li>
+                        <li>Monthly reports</li>
+                        <li>Email support</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h3>Tier 2</h3>
+                    <ul>
+                        <li>Advanced grammar check</li>
+                        <li>Bi-weekly reports</li>
+                        <li>Priority email support</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h3>Tier 3</h3>
+                    <ul>
+                        <li>Professional grammar check</li>
+                        <li>Weekly reports</li>
+                        <li>Phone support</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h3>Tier 4</h3>
+                    <ul>
+                        <li>Comprehensive grammar check</li>
+                        <li>Daily reports</li>
+                        <li>24/7 support</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h3>Tier 5</h3>
+                    <ul>
+                        <li>Complete grammar audit</li>
+                        <li>Real-time reports</li>
+                        <li>Dedicated support agent</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
